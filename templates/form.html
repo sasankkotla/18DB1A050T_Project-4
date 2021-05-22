@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>E-Pass Telangana</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+  <body style="margin:0">
+      <div class="header">
+     	 <img src="{{ url_for('static', filename='img/tslogo.jpeg') }}" class="logo">
+      	<h1 class="header_text1">MINISTRY OF HEALTH AND FAMILY WELFARE</h1></br></br>
+      	<h3 class="header_text2">Government of Telangana</h3>
+      </div>
+      <p class="title">
+           Movement Pass During Covid-19 Pandemic
+      </p>
+      <div class="container">
+      	<div class="details">
+         		<form method="post" action="/login_page">
+        <label for="fname">First Name</label>
+        <input type="text" name="fname"><br><br>
+
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname"><br><br>
+
+        <label for="email">Email</label>
+        <input type="text" name="email"><br><br>
+
+        <label for="source-state">Source State</label>
+        <input type="text" name="source-state"><br><br>
+
+        <label for="source-dt">Source District</label>
+        <input type="text" name="source-dt"><br><br>
+
+        <label for="dest-st">Destination State</label>
+        <input type="text" name="dest-st"><br><br>
+
+        <label for="dest-dt">Destination District</label>
+        <input type="text" name="dest-dt"><br><br>
+
+        <label for="pno">Phone Number</label>
+        <input type="text" name="pno"><br><br>
+
+        <label for="trip">Date</label>
+        <input type="date" name="trip"><br><br>
+
+        <input type="submit">
+
+    </form>
+      	</div>
+         </div>
+  </body>
+</html>
